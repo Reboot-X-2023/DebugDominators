@@ -1,1 +1,20 @@
-# homeless-host-availability
+# Debug Dominators - Homeless Host Availability
+
+# Our Idea
+With approximately 2500 people sleeping on the streets each night, charities have been hard at work: collaborating with compassionate individuals willing to offer their rooms; to provide safe and warm shelters overnight. However, resource scarcity and intricate processes hinder their effectiveness and there is much that could use more efficiency. Our blueprint revolves around a web application with two primary user roles: volunteers, who generously volunteer their rooms to the homeless, and the charity staff managing everything. Our solution plans to aid both in streamlining their workflows. Volunteers will enter the system via registering through a form where they share the required details. This will trigger a request in the staff view, which the staff can then use to conduct any required checks, once satisfied they will be able to approve the request which then unlocks the platform for the volunteer. The volunteers have access to a user-friendly weekly calendar where they can effortlessly share their availability for each night with a single tap. Charity staff, equipped with their own calendar view, can easily identify available donors and book nights for pre-verified homeless individuals, known as guests in the system. Notifications and texts are sent to confirm bookings and prompt donor reconfirmation before the guest travels to the address to avoid any last-minute complications. Donors can check in through the app upon receiving their guest and later check out, leaving valuable comments or reviews for the charity.
+
+We do also aspire to incorporate features like a chat function for volunteer-charity communication during guest stays. An automated phone line which will offer an accessible alternative for donors unable to use the app to manage availability and will still seamlessly integrate into the app for the staff. Additionally, a search engine which will empower charities to locate volunteers based on specific preferences, such as proximity to the homeless person, step-free access, pet-free, smoke-free, etc. We would eventually also like to integrate homeless people to directly have access to the app, so they can easily navigate to bookings made by the charity staff, have their own chat functions and be able to leave their own feedback. If the homeless person has a QR code for a Crisis profile, they will be able to scan it, which will then automatically create a profile for them on the app. They would then directly be able to view available hosts who allow guest to book directly. Hosts and guests will get a list of availabilities they can approve, if a match is made, it will automatically create a booking, taking some workload of the charity.
+
+We hope to revolutionize the way charities and volunteers collaborate, harnessing technology to facilitate efficient, secure, and compassionate aid to the homeless. By automating processes and fostering seamless communication, we aspire to broaden the impact and enable reaching more individuals in need, ensuring safe shelter for those in need and hence helping Britain prosper.
+
+# What we were able to achieve
+We were able to lay the foundation of our backend using python and django. The code can be viewed in the repository.
+
+Through the admin view created using django our backend:
+1. Can create guest and hosts.
+2. Allow availabilties to be created for a host.
+3. Allow bookings to be made for between an available host and a guest ensuring there are no conflicts and also removing the host availabilty automatically.
+
+We were also able to create endpoints which allow an external app for frontend to be able to execute all of the above through https requests, once the frontend app URL has been whitelisted in the configuration.
+
+There is much to do but we hope we can take it forward to develop something that is able to contribute to society and make a difference!
